@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado{
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.logo-rio h1{
+    font-size: 50px;
+
+    font-weight: 900;
+
+    line-height: 45px;
+}
+
+.logo-rio span{
+    color: #ff0aa6;
+}
+
+.logo-rio a{
+    text-decoration: none;
+
+    color: white;
+}
+
+.menu{
+    display: flex;
+
+    gap: 40px;
+}
+
+.menu a{
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:link{
+    color: white;
+}
+
+.menu a:visited{
+    color: white;
+}
+
+.menu a:hover{
+    color: #ff0aa6;
+}
+
+
+.parte-principal{
+    background: linear-gradient(to right, #ef8bcf, #f3df93);
+
+    min-height: 350px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.texto-principal h2{
+    font-size: 38px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+.texto-principal p{
+    font-size: 22px;
+
+    line-height: 35px;
+}
+
+.boton-principal a{
+    background-color: #ff0aa6;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.zona-artistas{
+    background-color: #ececec;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.zona-artistas h2{
+    text-align: center;
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+    margin-bottom: 50px;
+}
+
+.contenedor-artistas{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.carta-artista{
+    background-color: #f5f1eb;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+.carta-artista img{
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.carta-artista h3{
+    margin-top: 15px;
+
+    font-size: 24px;
+
+    font-weight: 900;
+}
+
+
+.titulo-entradas{
+    background: linear-gradient(to right, #ef8bcf, #f3df93);
+
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titulo-entradas h2{
+    font-size: 60px;
+
+    font-weight: 900;
+}
+
+.titulo-entradas p{
+    margin-top: 10px;
+
+    font-size: 20px;
+}
+
+
+.zona-entradas{
+    background-color: #f5f5f5;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.contenedor-entradas{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    justify-items: center;
+}
+
+.carta-entrada{
+    background-color: #a9a9a9;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.carta-entrada h3{
+    font-size: 40px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+.carta-entrada p{
+    margin-bottom: 15px;
+}
+
+.carta-entrada h4{
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+.carta-entrada ul{
+    text-align: left;
+
+    padding-left: 20px;
+
+    margin-bottom: 30px;
+}
+
+.carta-entrada li{
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+.carta-entrada a{
+    background-color: #ff0aa6;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    font-weight: 900;
+
+    margin-top: 10px;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.zona-info{
+    background-color: #d9d9d9;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.caja-info{
+    flex: 1;
+
+    min-width: 250px;
+
+    text-align: center;
+}
+
+.caja-info i{
+    font-size: 60px;
+
+    color: #ff4fc3;
+
+    margin-bottom: 20px;
+}
+
+.caja-info h3{
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin-bottom: 10px;
+}
+
+.caja-info p{
+    font-weight: bold;
+}
+
+.linea{
+    width: 3px;
+
+    height: 120px;
+
+    background-color: gray;
+}
+
+
+.pie-pagina{
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo-abajo h2{
+    font-size: 40px;
+
+    font-weight: 900;
+
+    line-height: 40px;
+}
+
+.logo-abajo span{
+    color: #ff0aa6;
+}
+
+.texto-footer h3{
+    font-size: 32px;
+
+    font-weight: 900;
+}
+
+.input-footer input{
+    width: 100%;
+
+    background-color: transparent;
+
+    color: white;
+
+    border: 4px solid #ff4fc3;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.input-footer input::placeholder{
+    color: white;
+
+    font-size: 12px;
+}
+
+
+.pagina-artistas{
+    background-color: #efefef;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.artista{
+    width: 100%;
+
+    max-width: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.tarjeta-artista{
+    background-color: white;
+
+    border: 2px solid white;
+}
+
+.foto-artista{
+    padding: 10px;
+
+    text-align: center;
+}
+
+.foto-artista img{
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.foto-artista h3{
+    margin-top: 10px;
+
+    font-size: 24px;
+
+    font-weight: 900;
+}
+
+.descripcion-artista{
+    padding: 10px;
+
+    min-height: 220px;
+}
+
+.descripcion-artista p{
+    text-align: center;
+
+    line-height: 25px;
+
+    font-size: 15px;
+}
+
+.video-artista{
+    width: 100%;
+
+    height: 170px;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    margin-top: 15px;
+}
+
+.video-artista video{
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.video-artista iframe{
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+}
+
+
+@media(max-width: 992px){
+
+    .contenedor-artistas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-entradas{
+        grid-template-columns: 1fr;
+    }
+
+    .carta-entrada{
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    .parte-principal{
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .pie-pagina{
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .linea{
+        display: none;
+    }
+
+    .pagina-artistas{
+        gap: 40px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .encabezado{
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .contenedor-artistas{
+        grid-template-columns: 1fr;
+    }
+
+    .texto-principal h2{
+        font-size: 28px;
+    }
+
+    .texto-principal p{
+        font-size: 18px;
+    }
+
+    .titulo-entradas h2{
+        font-size: 45px;
+    }
+
+    .logo-rio h1{
+        font-size: 35px;
+    }
+
+    .texto-footer h3{
+        font-size: 22px;
+    }
+
+    .input-footer input{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .artista{
+        max-width: 100%;
+    }
+
+    .descripcion-artista{
+        min-height: auto;
+    }
+
+}
